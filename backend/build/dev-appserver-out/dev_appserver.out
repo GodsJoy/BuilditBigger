@@ -1,0 +1,32 @@
+Warning: Google App Engine Java 7 runtime is deprecated.
+Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
+Oct 23, 2018 2:36:58 AM java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+Oct 23, 2018 2:37:00 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\erinf\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\erinf\ud867\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+Oct 23, 2018 2:37:01 AM com.google.apphosting.utils.jetty.JettyLogger info
+INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
+Oct 23, 2018 11:37:02 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (C:\Users\erinf\ud867\FinalProject\backend) is not equal to your 
+web application root (C:\Users\erinf\ud867\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+Oct 23, 2018 11:37:04 AM com.google.apphosting.utils.jetty.JettyLogger info
+INFO: jetty-6.1.x
+Oct 23, 2018 11:37:06 AM com.google.apphosting.utils.jetty.JettyLogger info
+INFO: Started SelectChannelConnector@localhost:8080
+Oct 23, 2018 11:37:06 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+Oct 23, 2018 11:37:06 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Oct 23, 2018 2:37:06 AM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running
+Oct 23, 2018 3:24:02 AM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
+INFO: C:\Users\erinf\ud867\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
+Oct 23, 2018 3:24:02 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\erinf\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\erinf\ud867\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+Oct 23, 2018 3:24:03 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (C:\Users\erinf\ud867\FinalProject\backend) is not equal to your 
+web application root (C:\Users\erinf\ud867\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
