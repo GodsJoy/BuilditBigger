@@ -13,6 +13,7 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static org.hamcrest.core.IsNot.not;
 
 @RunWith(AndroidJUnit4.class)
 public class AsyncTaskTestAndroid {
@@ -23,7 +24,7 @@ public class AsyncTaskTestAndroid {
     @Test
     public void clickBTN_showJoke(){
         onView(withId(R.id.tellJokeBTN)).perform(click());
-        onView(withId(R.id.joke_TV)).check(matches(withText("Here is a joke from joke source")));
+        onView(withId(R.id.joke_TV)).check(matches(not(withText(""))));
 
     }
 
