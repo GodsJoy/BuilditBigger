@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.util.Pair;
 import android.widget.Toast;
 
@@ -47,13 +48,13 @@ class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
         try {
             return myApiService.getJokeFromSource().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            Log.d("AsyncTaskError", e.getMessage());
+            return "";
         }
     }
 
     @Override
     protected void onPostExecute(String joke) {
-        Toast.makeText(context, joke, Toast.LENGTH_LONG).show();
         Intent intent = new Intent(context, JokeActivity.class);
         intent.putExtra(JokeActivityFragment.JOKE_EXTRA, joke);
         context.startActivity(intent);

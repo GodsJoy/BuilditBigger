@@ -59,5 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
         //call the endpoint
         new EndpointsAsyncTask().execute(this);
+
     }
 }
